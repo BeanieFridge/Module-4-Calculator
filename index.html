@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+  </head>
+
+  <body>
+
+    <div class="container col-12">
+    <div class="input-group mb-3">
+        <span class="input-group-text">First Number</span>
+        <input type="text" id="firstNumber" class="form-control">
+    </div>
+
+    <select id="operator">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" >Second Number</span>
+        <input type="text" id="secondNumber" class="form-control">
+    </div>
+
+    <button type="button" id="calculateBtn" class="btn btn-primary">Calculate</button>
+    <button onclick="resetNumbers()" class="btn btn-secondary">Reset</button>
+    <p id="result"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
